@@ -1,0 +1,38 @@
+def calc_machinecosts():
+  print("Hi, my name is Juan, i will help you to calculate the prices of the machines :)")
+  print("If you want to buy and see the price with discount of: only one machine, write One, if you want to buy two, write Two")
+  v1=input()
+  if(v1)==str("One"):
+    print("I see you want to buy just one machine, what's the price in pesos?")
+    V1=input()
+    p1=int(V1)*0.10
+    p1_2=int(V1)-p1
+    print("the final price of your machine with the 10% discount applied is",p1_2)
+    print("The discount applied is of",p1)
+  if(v1)==str("Two"):
+    print("Great, you want to buy two machines! please inserte both costs individually in pesos")
+    V2=input()
+    V3=input()
+    p2=int(V2)+int(V3)
+    p2_1=p2-((int(V2)+int(V3))*0.10)
+    print("Your total without discount is:",p2)
+    print("And with discount is:",p2_1)
+  print("Do you want to know how much will it be depending on what currency you pay in? the answers are already in Mex pesos")
+  print("Answer with yes or no")
+  ans=input()
+  if(ans)==str("yes"):
+    print("In what currency do you want to pay?")
+    print("options,write them as they appear here: dollars, yen")
+    currency=input()
+    print("Write the quantity you want to convert please")
+    cant=input()
+    if(currency)==str("dollars"):
+      dol=float(cant)*0.057
+      print("You will pay in american dollars",dol)
+    if(currency)==str("yen"):
+      yen=float(cant)*8.37
+      print("Your total in japanese yen is:",yen)
+  if(ans)==str("no"):
+    print("Okey! thank you, have a nice day :)")
+
+calc_machinecosts()
