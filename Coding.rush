@@ -1,0 +1,6 @@
+def just_get_over_it():
+  letter="Letter to my ex. Hello again, L. Wish i could say that I miss you, but honestly that would be lying. You cross my mind, yes, but it's only thoughts of pure pity and resentment. I wasted like all of my summer with you, listening to your lies. You're a pathological liar, and that's absolutely it. Old promises of love are useless, because you said “i love you” the third time we saw each other, proving that love phrases mean absolutely nothing to you. You have such a codependency on people you barely know, so you developed a “crush” on me, not even knowing me. If i asked you right now whats my father’s name, you wouldn't be able to tell me, and we were together for FIVE MONTHS. You claim to be depressed, but in reality you just like to be pitied. You bring everyone down with your FAKE sob stories. lies. You said your best friend was in love with you, getting to the point of texting me from HIS instagram account, just for me to get jealous and insecure… and it was fake all along. WHY. WHAT WAS THE POINT?!!??? to see me mad? jealous? for me to appreciate you more? there were other ways to accomplish that, without lies and playing with me. You said you were going to leave me just to manipulate me, you freaking crazy imbecile."
+  words=letter.split()
+  number=len(words)
+  print(number)
+just_get_over_it()
