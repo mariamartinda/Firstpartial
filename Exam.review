@@ -1,0 +1,20 @@
+def grade_average():
+  print("hi :), do you want to calculate the average of your grades?")
+  ans=input()
+  if(ans)=="yes":
+    print("great! let's start")
+    print("please give me your last grades three obtained in format of over one hundred and with decimals")
+    g1=input()
+    g2=input()
+    g3=input()
+    print("thank you!")
+    print("I'll evaluate if you passed or not with the next criteria: if your average is more or equal to 7 you pass, if not, you fail")
+    x=input()
+    average=(float(g1)+float(g2)+float(g3))/3
+    if(average)>=70:
+      print("You passed! congrats :D")
+    if(average)<70:
+      print("you failed, but keep going, is not the end of it!")
+    print("this is your average:", average)
+
+grade_average()
