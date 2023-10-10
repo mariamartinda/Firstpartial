@@ -55,8 +55,11 @@ print("Enter the age at wich you want to retire:")
 retire=int(input())
 print("Enter the desired retirement amount:")
 moneygoal=int(input())
-PMT=(int(moneygoal)*(10/12))/((((1+(10/12))**(12*(retire)))-1)*(1+(10/12)**-(retire-age)))
-print("The required monthly payment is $",PMT,"considering that the annual rate is 10%")
+r = 0.10/12
+n = (retire-age)*12
+t = retire - age
+PMT = (moneygoal)*r/(((1+r)**n)-1)*((1+r)**(-t))
+print("To retire at the age of",retire,"you will need to save $",PMT,"monthly, considering that the annual rate is 10%")
 
 #https://replit.com/@MariaMartin8/P2schoolgrades?s=app
 
