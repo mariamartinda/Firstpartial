@@ -1,0 +1,86 @@
+#
+print("Hi! welcome, we are going to help you take care of your very special plant Ruby!")
+print("Please enter the next data:")
+temp=int(input("Enviornment temperature in deegres celcius:"))
+enviornment=int(input("Porcentage of humidity in the air around Ruby:"))
+day=str(input("Day of the week:"))
+water = day=="thursday" or day=="tuesday" or day=="saturday"
+notwater = day== "monday" or day =="wednesday" or day=="friday" or day=="sunday"
+
+if temp>=20 and temp<25 and water and enviornment<20:
+  print("Good condition")
+  print("water Ruby")
+  print("You should water Ruby")
+
+if temp>=20 and temp<25 and notwater and enviornment<20:
+  print("Good condition")
+  print("You should water Ruby")
+
+if temp>=20 and temp<25 and water and enviornment>20 and enviornment==20:
+  print("Good condition")
+  print("water Ruby")
+  print("Suitable humidity")
+
+if temp>=20 and temp<25 and notwater and enviornment>20 and enviornment==20:
+  print("Good condition")
+  print("Suitable humidity")
+
+if temp>=20 and temp<25 and water and enviornment>22:
+  print("Good condition")
+  print("Water Ruby")
+
+if temp>=20 and temp<25 and notwater and enviornment>22:
+  print("Good condition")
+  print("It is not necessary to water Ruby")
+
+if enviornment<20 and water and enviornment<20:
+  print("Bring it inside the house")
+  print("water ruby")
+  print("You should water Ruby")
+
+if enviornment<20 and notwater and enviornment<20:
+  print("Bring it inside the house")
+  print("You should water Ruby")
+
+if enviornment<20 and water and enviornment>20 and enviornment==20:
+  print("Bring it inside the house")
+  print("water ruby")
+  print("Suitable humidity")
+
+if enviornment<20 and notwater and enviornment>20 and enviornment==20:
+  print("Bring it inside the house")
+  print("Suitable humidity")
+
+if enviornment<20 and water and enviornment>22:
+  print("Bring it inside the house")
+  print("Water Ruby")
+
+if enviornment<20 and notwater and enviornment>22:
+  print("Bring it inside the house")
+  print("It is not necessary to water Ruby")
+
+if temp>=25 and water and enviornment<20:
+  print("Bring it inside the house and turn on the fan")
+  print("water Ruby")
+  print("You should water Ruby")
+
+if temp>=25 and notwater and enviornment<20:
+  print("Bring it inside the house and turn on the fan")
+  print("You should water ruby")
+
+if temp>=25 and water and enviornment>20 and enviornment==20:
+  print("Bring it inside the house and turn on the fan")
+  print("water Ruby")
+  print("Suitable humidity")
+
+if temp>=25 and notwater and enviornment>20 and enviornment==20:
+  print("Bring it inside the house and turn on the fan")
+  print("Suitable humidity")
+
+if enviornment>=25 and notwater and enviornment>22:
+  print("Bring it inside the house and turn on the fan")
+  print("Water Ruby")
+
+if enviornment>=25 and notwater and enviornment>22:
+  print("Bring it inside the house and turn on the fan")
+  print("It is not necessary to water Ruby")
